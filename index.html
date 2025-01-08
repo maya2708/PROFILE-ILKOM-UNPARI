@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Program Studi</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #e0f0f9, #c3d9f4);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #005cbf, #003366);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 150px;
+            margin-right: 30px;
+        }
+        nav {
+            background: linear-gradient(to right, #004080, #003366);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: linear-gradient(to right, #006bb3, #004080);
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: linear-gradient(to right, #0056a3, #002e5c);
+            transform: scale(1.1);
+        }
+        nav a i {
+            font-size: 18px;
+        }
+        main {
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            border-left: 5px solid #0066cc;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            margin-bottom: 15px;
+            font-size: 26px;
+            color: #003366;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .section p, .section ul {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #555;
+        }
+        .section ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .section:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        /* Efek muncul saat scroll */
+        .section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-in-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #005cbf, #003366);
+            color: white;
+            font-size: 14px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM7mEovbY93g3XK0SzB6cEgy8BQeL9iYvoRSbAz" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <img src="uploads/logo_unpari2.png" alt="Logo Universitas">
+    <div>
+        <h1>UNIVERSITAS PGRI SILAMPARI</h1>
+        <h1>FAKULTAS SAINS DAN TEKNOLOGI</h1>
+        <h2>PROGRAM STUDI ILMU KOMPUTER</h2>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+    <a href="kerjasama.php"><i class="fas fa-handshake"></i> Pengelolaan Kerjasama</a>
+    <a href="publikasi.php"><i class="fas fa-book"></i> Pengelolaan Publikasi</a>
+    <a href="fasilitas.php"><i class="fas fa-building"></i> Fasilitas</a>
+    <a href="prestasi.php"><i class="fas fa-trophy"></i> Pengelolaan Prestasi</a>
+    <a href="kegiatan.php"><i class="fas fa-calendar-alt"></i> Pengelolaan Kegiatan</a>
+    <a href="login.php"><i class="fas fa-user"></i> Admin</a>
+</nav>
+
+<main>
+    <section class="section">
+        <h2>Visi</h2>
+        <p>Menjadi program studi unggulan dalam pembentukan dan pengembangan SDM Dalam Bidang Informasi Teknologi Dan Komunikasi Serta Menghasilkan Lulusan Profesional Berjiwa Entrepreneur Pada Tahun 2045 Tingkat Nasional..</p>
+    </section>
+    
+    <section class="section">
+        <h2>Misi</h2>
+        <ul>
+            <li>Mengembangkan dalam meningkatkan mutu dan kualitas tenaga akademik serta mahasiswanya maupun lulusannya dalam pendidikan dan penelitian yang mendukung pengembangan program studi ilmu komputer dalam bidang informasi teknologi dan komunikasi.</li>
+            <li>Melaksanakan tri dharma perguruan tinggi dan mengupayakan program studi ilmu komputer sebagai pusat penelitian, pelatihan dan pengembangan jasa dalam bidang informasi teknologi dan komunikasi dengan tata kelola yang baik dalam rangka mendukung terbentuknya universitas yang berdaya saing global.</li>
+            <li>Meningkatkan kerjasama pendidikan dan penelitian dengan perguruan tinggi-perguruan tinggi dalam negeri, serta mempersiapkan lulusan yang siap bersaing dalam bidang penelitian ilmu komputer dan mencetak tenaga tenaga professional yang siap kerja serta siap untuk menjadi entrepreneur dalam dunia jasa maupun industri..</li>
+        </ul>
+    </section>
+    
+    <section class="section">
+        <h2>Tujuan</h2>
+        <ul>
+            <li>Menghasilkan lulusan yang memiliki kemampuan mengembangkan dan mengimplementasikan sistem komputer khususnya dalam bidang pemrograman dan sistem jaringan serta menguasai analisa strategi pengelolaan manajemen informasi dan teknologi di bidang yang dikuasainya tersebut.</li>
+            <li>Menghasilkan karya-karya ilmiah bidang pemrograman dan sistem jaringan di tingkat regional dan nasional.</li>
+            <li>Menghasilkan konstribusi keilmuan dan teknologi bidang pemrograman dan sistem jaringan kepada masyarakat Indonesia.</li>
+        </ul>
+    </section>
+    
+    <section class="section">
+        <h2>Tentang Program Studi</h2>
+        <p>Program Studi Ilmu Komputer berfokus pada pengembangan perangkat lunak, administrasi jaringan, dan aplikasi teknologi informasi untuk mendukung transformasi digital di berbagai sektor.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Program Studi Ilmu Komputer, Universitas PGRI Silampari</p>
+</footer>
+
+    <script>
+        // JavaScript untuk animasi scroll
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.section');
+
+            const revealSections = () => {
+                const triggerBottom = window.innerHeight * 0.85;
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < triggerBottom) {
+                        section.classList.add('visible');
+                    } else {
+                        section.classList.remove('visible');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', revealSections);
+            revealSections(); // Panggil saat halaman dimuat
+        });
+    </script>
+
+</body>
+</html>
